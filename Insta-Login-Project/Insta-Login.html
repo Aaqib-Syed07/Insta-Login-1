@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Style.css">
+        <link data-default-icon="https://static.cdninstagram.com/rsrc.php/v3/yI/r/VsNE-OHk_8a.png" rel="icon"    sizes="192x192" href="https://static.cdninstagram.com/rsrc.php/v3/yI/r/VsNE-OHk_8a.png" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Login • Instagram</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    </head>
+    <body>
+        <div class="main">
+            <div class="mobile"><img src="Images/Login-mob.png" class="mob"></div>
+           <div class="container">
+                <div class="in">
+                   <div class="logo">
+                    <img src="Images/Insta.png" class="insta">
+                   </div> <br>
+                    <div class="form">
+                         <input type="text" class="user" placeholder="Phone number,username or email">
+                    </div> <br>
+                       <input type="password" class="pwd" id="pwd" placeholder="Password"> 
+                       <i class="far fa-eye-slash eye" id="eye" onclick="showHide()"></i> <br>
+                        <button class="login"> <span class="log">Log in</span></button>
+                      <p class="or">OR</p> <br>
+                     <div class="logWfb">
+                       <a href=""> <img src="Images/login-with-fb.png" class="logfb"> </a>
+                     </div>
+                    <div class="forgetpwd">
+                      <a href="" class="forgetpwd">Forgot password?</a>  
+                    </div>
+              </div>
+              <div class="lower">
+                <p class="dnt">Don't have an account? <a href="" class="Sign">Sign up</a></p>
+              </div>
+             <p class="get">Get the app</p>
+               <div class="least">
+                    <a href=""> <span class="play">
+                     <img src="Images/Play-source.png" >
+                  </span> </a>
+                  <a href=""> <span class="micro"> <img src="Images/Micro-source.png"> </span> </a>
+               </div>
+            </div>
+        </div>
+        
+        <ul>
+            <li>
+                <a href="" class="List">
+                    Meta
+                </a>
+            </li>
+            <li>
+                <a href="" class="List">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="" class="List">
+                    Blog
+                </a>
+            </li>
+            <li>
+                <a href="" class="List">
+                    Jobs
+                </a>
+            </li>
+            <li>
+                <a href="" class="List">
+                    Help
+                </a>
+            </li>
+            <li>
+                <a href="" class="List">
+                    API
+                </a>
+            </li>
+            <li>
+                <a href="" class="List">
+                    Privacy
+                </a>
+            </li>
+            <li>
+                <a href="" class="List">
+                    Terms
+                </a>
+            </li>
+            <li>
+                <a href="" class="List">
+                    Top accounts
+                </a>
+            </li>
+            <li>
+                <a href="" class="List">
+                    Locations
+                </a>
+            </li>
+            <li>
+                <a href="" class="List">
+                    Instagram Lite
+                </a>
+            </li>
+            <li>
+                <a href="" class="List">
+                    Threads
+                </a>
+            </li>
+            <li>
+                <a href="" class="List">
+                    Contact uploading and non-users
+                </a>
+            </li>
+            <li>
+                <a href="" class="List">
+                    Meta Verified
+                </a>
+            </li>
+        </ul>
+    </body>
+    <script>
+        function showHide(){
+                var blink = document.getElementById("eye").classList.contains("fa-eye-slash");
+                if(blink){
+                    document.getElementById("eye").classList.remove("fa-eye-slash");
+                    document.getElementById("eye").classList.add("fa-eye");
+                    document.getElementById("pwd").setAttribute("type","text");
+                }
+                else{
+                    document.getElementById("eye").classList.add("fa-eye-slash");
+                    document.getElementById("eye").classList.remove("fa-eye");
+                    document.getElementById("pwd").setAttribute("type","password");
+                }
+            }
+    </script>
+</html>
